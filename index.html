@@ -1,7 +1,116 @@
+
 <!DOCTYPE html>
 <html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Any2Policy: Learning Visuomotor Policy with Any-Modality</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta name="og:image" content="https://innermonologue.github.io/img/teaser.png" />
+    <meta property="og:image" content="https://innermonologue.github.io/img/teaser.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="900">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inner-monologue.github.io/"/>
+    <meta property="og:title" content="Inner Monologue: Embodied Reasoning through Planning with Language Models." />
+    <meta property="og:description" content="Project page for Inner Monologue: Embodied Reasoning through Planning with Language Models" />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Inner Monologue: Embodied Reasoning through Planning with Language Models." />
+    <meta name="twitter:description" content="Project page for Project page for Inner Monologue: Embodied Reasoning through Planning with Language Models" />
+    <meta name="twitter:image" content="https://innermonologue.github.io/img/teaser.png" />
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>Any2Policy: Learning Visuomotor Policy </br> with Any-Modality</br> 
+                <!--<small>
+                    
+                </small>-->
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+               <ul class="list-inline">
+                <br>
+
+    <li>Anonymous Author(s)</li>
+        <br><br>
+                
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                                
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Humans can communicate and observe media with different modalities, such as texts, sounds, and images. For robots to be more generalizable embodied agents, they should be capable of following instructions and perceiving the world with adaptation to diverse modalities. Current robotic learning methodologies often focus on single-modal task specification and observation, thereby limiting their ability to process rich multi-modal information. Addressing this limitation, we present an end-to-end general-purpose multi-modal system named Any-to-Policy Embodied Agents. This system empowers robots to handle tasks using various modalities, whether in combinations like text-image, audio-image, text-point cloud, or in isolation. Our innovative approach involves training a versatile modality network that adapts to various inputs and connects with policy networks for effective control. Because of the lack of existing multi-modal robotics datasets for evaluation, we assembled a comprehensive real-world dataset encompassing 30 robotic tasks. Each task in this dataset is richly annotated across multiple modalities, providing a robust foundation for assessment. We conducted extensive validation of our proposed unified modality embodied agent using several simulation benchmarks, including Franka Kitchen, Meta-World, and Maniskill2, as well as in our real-world settings. Our experiments showcase the promising capability of building embodied agents that can adapt to diverse multi-modal in a unified framework.
+                </p>
+
+                <div class="text-center">
+                    <video id="v0" width="90%" playsinline loop controls autoplay muted>
+                        <source src="img/any2policy_demo.mp4" type="video/mp4">
+                        </video>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            	<br>
+                <h3>
+                    Framework
+                </h3>
+                <p class="text-justify">
+                    Building on the proven success of multi-modal learning in various disciplines, our goal is to develop a multi-modal embodied agent capable of processing a wide array of instruction and observation modalities. Our method, referred to as Any-to-Policy Robot Model (abbreviated as Any2Policy) The Any2Policy architecture is structured in two primary components. Initially, we harness multi-modal encoders to extract relevant features from the input. These features are then transformed into standardized token representations, ensuring uniformity at the neural network level via projection layers. In the second component, we introduce embodied alignment, which processes multi-modal signals, enriched with specific instructions. These signals are routed to encoders following projection, ultimately leading to the generation of actions for manipulation. 
+                <div class="text-center">
+                    <image src="img/any2policy_framework.png" width="80%">
+            </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
 </body>
 </html>
